@@ -65,6 +65,7 @@ body
     gap: 5px;
     border: 1px solid #E6E6E6
 }
+
 input{
     border: none;
 }
@@ -176,6 +177,286 @@ input{
 }
 .r 
 {
-    background-color: white;
-    margin-left: 650px;
+    
+    margin-left: 670px;
+}
+.prod
+{
+    margin-top: 30px;
+
+}
+.product
+{   
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    flex-wrap: wrap;
+    
+}
+.prod_txt 
+{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+
+}
+.product_item
+{
+    padding: 67px 15px 20px 15px;
+    width: 200px ;
+
+    position: relative;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.product___item__buy {
+    display: none;
+    position: absolute;
+    top: 99%; /* Размещение блока снизу от product_item */
+    left: 0;
+    width: 210px ;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1; /* Поместить блок поверх других элементов */
+    background-color: #fff; /* Цвет фона блока */
+    padding: 10px; /* Добавьте отступы или другие стили по желанию */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень блока */
+}
+.product_item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease;
+}
+.product___item__heart
+{
+    position: absolute;
+    top:7px ;
+    right:6px ;
+    
+}
+.product___item__txt
+{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: bold;
+
+
+}
+.product___item__sova
+{
+    font-family: 'Roboto';
+font-size: 11px;
+font-weight: 400;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 6px;
+
+    
+}
+.product___item__price
+{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 8px;
+
+
+}
+.product___item__buy-rm
+{
+    margin-top: 15px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.product___item__buy-block-wh
+{
+    margin-top: 8px;
+    display: flex;
+    gap: 37px;
+}
+
+.product___item__buy-block-wh-w
+{
+    font-family: 'Roboto';
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+
+
+}
+.product___item__buy-block-numb
+{
+    display: flex;
+    gap: 50px;
+}
+.product___item__buy-block-numb-n
+{
+    font-family: 'Roboto';
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+}
+.product___item__buy-btn
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.itembtn
+{
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color:  #245462;
+    border: none;
+    color: white;
+    display: flex;
+    padding: 10px 30px;
+
+    
+}
+.product___item__buy
+{
+    display: none;
+    
+}
+
+
+.product_item:hover .product___item__buy
+{
+    display: block;
+    
+}
+.footer 
+{
+    padding-top: 54px;
+}
+.footer_fblock
+{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+
+}
+.fot 
+{
+    height: 234px;
+    box-shadow: 0px -4px 10px 0px #00000008;
+    width: 100%;
+    
+
+}
+.footer_txt
+{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0em;
+    
+
+
+}
+
+.footer_fblock_left
+{
+    width: 384px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_fblock_left-item
+{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 33.33%;
+    box-sizing: border-box; 
+    padding: 5px; 
+
+
+}
+.footer_fblock_right-logo
+{
+    font-family: 'Roboto';
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+
+
+}
+.footer_fblock_right-txt
+{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: right;
+
+}
+.footer_sblock
+{
+    margin-top: 34px;
+    display: flex;
+    
+    justify-content:space-between;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.footer_sblock_left
+{
+    display: flex;
+    gap: 20px;
+
+}
+.footer_sblock_right
+{
+    display: flex;
+    gap: 20px;
+
+}
+.footer_sblock_right-item
+{
+    display: flex;
+    gap: 20px;
 }
